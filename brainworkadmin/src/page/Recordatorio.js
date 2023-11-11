@@ -3,7 +3,7 @@ import * as FaIcons from "react-icons/fa";
 import { Link} from "react-router-dom";
 import "./styles.css";
 import { IconContext } from "react-icons";
-import Photo from "../img/doom.png"
+import Photo from "../img/doom.png";
 
 
 function Recordatorio() {
