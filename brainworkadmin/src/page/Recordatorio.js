@@ -21,6 +21,7 @@ function Recordatorio() {
           <h2 className="titulo">Recordatorio</h2>
         </div>
         
+        {/*Menu lateral */}
         <nav className={sidebar ? "nav-menu active" : "nav-menu"}>
           <ul className="nav-menu-items" onClick={showSidebar}>
           
@@ -30,12 +31,31 @@ function Recordatorio() {
           <div className="nameUser">
             <p>Angel Montalvo</p>
           </div>
+          
+            <Link to="/main" className="d-flex align-items-center coll">
+              <FaIcons.FaHome className="mr-2" /> {/* Icono para Home */}
+              <span>Menu Principal</span>
+            </Link>
 
-          <Link to="/main" className='d-grid coll'>Menu Principal</Link>
-          <Link to="/tareas" className='d-grid coll'>Tareas Asignadas</Link>
-          <Link to="/calendario"  className="d-grid coll">Calendario</Link>
-          <Link to="/recordatorio"  className="d-grid coll">Recordatorio</Link>
-          <Link to="/"  className="d-grid cerrar">Cerrar Sesión</Link>
+            <Link to="/tareas" className="d-flex align-items-center coll">
+              <FaIcons.FaTasks className="mr-2" /> {/* Icono para Tareas Asignadas */}
+              <span>Tareas Asignadas</span>
+            </Link>
+
+            <Link to="/calendario" className="d-flex align-items-center coll">
+              <FaIcons.FaCalendarAlt className="mr-2" /> {/* Icono para Calendario */}
+              <span>Calendario</span>
+            </Link>
+
+            <Link to="/recordatorio" className="d-flex align-items-center coll">
+              <FaIcons.FaBell className="mr-2" /> {/* Icono para Recordatorio */}
+              <span>Recordatorio</span>
+            </Link>
+
+            <Link to="/" className="d-flex align-items-center cerrar">
+              <FaIcons.FaSignOutAlt className="mr-2" /> {/* Icono para Cerrar Sesión */}
+              <span>Cerrar Sesión</span>
+            </Link>
           </ul>
         </nav>
 

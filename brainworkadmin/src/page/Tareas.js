@@ -4,9 +4,10 @@ import { Link} from "react-router-dom";
 import "./styles.css";
 import { IconContext } from "react-icons";
 import Photo from "../img/doom.png";
-import Modales from "./Modal";
+import Modales from "../modals/Modal";
 import { Container, Row, Col } from 'react-bootstrap';
-import DataTable from "./Tabla";
+import DataTable from "../modals/Tabla";
+import EditModales from "../modals/EditModal";
 
 
 function Tareas() {
@@ -14,7 +15,8 @@ function Tareas() {
 
   const showSidebar = () => setSidebar(!sidebar);
 
-  const [taskData, setTaskData] = useState([
+  //Datos de la tabla
+  const [taskData] = useState([
     {
       id: 1,
       nombreTareas: 'FrontEnd',
@@ -29,7 +31,72 @@ function Tareas() {
       materia: 'Programación 1',
       fechaEntrega: '2023-12-01',
     },
+    {
+      id: 3,
+      nombreTareas: 'Subir registros',
+      descripcion: 'Subir los registros a la base de datos mediante el sistema',
+      materia: 'Bases de datos 1',
+      fechaEntrega: '2023-12-01',
+    },
+    {
+      id: 4,
+      nombreTareas: 'Conectar API',
+      descripcion: 'Realizar la conexion con la API',
+      materia: 'Programación 1',
+      fechaEntrega: '2023-12-01',
+    },
+    {
+      id: 5,
+      nombreTareas: 'Revisar registros',
+      descripcion: 'Verificar que los registros se encuentre de bien redactados',
+      materia: 'Bases de datos 1',
+      fechaEntrega: '2023-12-01',
+    },
+    {
+      id: 6,
+      nombreTareas: 'Crear tablas',
+      descripcion: 'Crear las tablas necesarias para el sistema',
+      materia: 'Bases de datos 1',
+      fechaEntrega: '2023-12-01',
+    },
+    {
+      id: 7,
+      nombreTareas: 'Modulo Usuarios',
+      descripcion: 'Crear el modulo de usuarios',
+      materia: 'Programación 1',
+      fechaEntrega: '2023-12-01',
+    },
+    {
+      id: 8,
+      nombreTareas: 'Resumen',
+      descripcion: 'Realizar un resumen de 2 cuartillas sobre JavaScript',
+      materia: 'Programación 1',
+      fechaEntrega: '2023-12-01',
+    },
+    {
+      id: 9,
+      nombreTareas: 'Reporte',
+      descripcion: 'Realizar un reporte sobre las bases de datos nos relacionales',
+      materia: 'Bases de datos 1',
+      fechaEntrega: '2023-12-01',
+    },
+    {
+      id: 10,
+      nombreTareas: 'Investigacion',
+      descripcion: 'Realizar una investigacion sobre React Native',
+      materia: 'Programación 1',
+      fechaEntrega: '2023-12-01',
+    },
+    {
+      id: 11,
+      nombreTareas: 'Investigacion',
+      descripcion: 'Realizar una investigacion sobre React JS',
+      materia: 'Programación 1',
+      fechaEntrega: '2023-12-01',
+    },
+    
   ]);
+
 
   return (
     <>
@@ -42,7 +109,7 @@ function Tareas() {
           <h2 className="titulo">Tareas Asignadas</h2>
         </div>
         
-        {/*Menu lateral de opciones*/}
+        {/*Menu lateral */}
         <nav className={sidebar ? "nav-menu active" : "nav-menu"}>
           <ul className="nav-menu-items" onClick={showSidebar}>
           
@@ -52,12 +119,31 @@ function Tareas() {
           <div className="nameUser">
             <p>Angel Montalvo</p>
           </div>
+          
+            <Link to="/main" className="d-flex align-items-center coll">
+              <FaIcons.FaHome className="mr-2" /> {/* Icono para Home */}
+              <span>Menu Principal</span>
+            </Link>
 
-          <Link to="/main" className='d-grid coll'>Menu Principal</Link>
-          <Link to="/tareas" className='d-grid coll'>Tareas Asignadas</Link>
-          <Link to="/calendario"  className="d-grid coll">Calendario</Link>
-          <Link to="/recordatorio"  className="d-grid coll">Recordatorio</Link>
-          <Link to="/"  className="d-grid cerrar">Cerrar Sesión</Link>
+            <Link to="/tareas" className="d-flex align-items-center coll">
+              <FaIcons.FaTasks className="mr-2" /> {/* Icono para Tareas Asignadas */}
+              <span>Tareas Asignadas</span>
+            </Link>
+
+            <Link to="/calendario" className="d-flex align-items-center coll">
+              <FaIcons.FaCalendarAlt className="mr-2" /> {/* Icono para Calendario */}
+              <span>Calendario</span>
+            </Link>
+
+            <Link to="/recordatorio" className="d-flex align-items-center coll">
+              <FaIcons.FaBell className="mr-2" /> {/* Icono para Recordatorio */}
+              <span>Recordatorio</span>
+            </Link>
+
+            <Link to="/" className="d-flex align-items-center cerrar">
+              <FaIcons.FaSignOutAlt className="mr-2" /> {/* Icono para Cerrar Sesión */}
+              <span>Cerrar Sesión</span>
+            </Link>
           </ul>
         </nav>
 
