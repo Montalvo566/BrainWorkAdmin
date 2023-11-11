@@ -6,19 +6,19 @@ import { IconContext } from "react-icons";
 import Photo from "../img/doom.png"
 
 
-function Main() {
+function Recordatorio() {
   const [sidebar, setSidebar] = useState(false);
 
   const showSidebar = () => setSidebar(!sidebar);
 
   return (
     <>
-      <IconContext.Provider value={{ color: "undefined" }}>
+       <IconContext.Provider value={{ color: "undefined" }}>
         <div className="navbar">
           <Link to="#" className="menu-bars">
             <FaIcons.FaBars onClick={showSidebar} />
           </Link>
-          <h2 className="titulo">Menú Principal</h2>
+          <h2 className="titulo">Recordatorio</h2>
         </div>
         
         <nav className={sidebar ? "nav-menu active" : "nav-menu"}>
@@ -39,10 +39,10 @@ function Main() {
           </ul>
         </nav>
 
-        <h1 className="prop">Menu</h1>
+        <h1 className="prop">Recordatorio de actividades</h1>
       </IconContext.Provider>
     </>
   );
 }
 
-export default Main;
+export default Recordatorio;

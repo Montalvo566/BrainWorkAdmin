@@ -6,19 +6,20 @@ import { IconContext } from "react-icons";
 import Photo from "../img/doom.png"
 
 
-function Main() {
+function Calendario() {
   const [sidebar, setSidebar] = useState(false);
 
   const showSidebar = () => setSidebar(!sidebar);
 
   return (
     <>
+
       <IconContext.Provider value={{ color: "undefined" }}>
         <div className="navbar">
           <Link to="#" className="menu-bars">
             <FaIcons.FaBars onClick={showSidebar} />
           </Link>
-          <h2 className="titulo">Menú Principal</h2>
+          <h2 className="titulo">Calendario</h2>
         </div>
         
         <nav className={sidebar ? "nav-menu active" : "nav-menu"}>
@@ -39,10 +40,10 @@ function Main() {
           </ul>
         </nav>
 
-        <h1 className="prop">Menu</h1>
+        <h1 className="prop">Calendario de actividades</h1>
       </IconContext.Provider>
     </>
   );
 }
 
-export default Main;
+export default Calendario;

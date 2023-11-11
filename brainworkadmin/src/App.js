@@ -4,6 +4,8 @@ import './App.css';
 import Login from './source/Login';
 import Main from './source/Main';
 import Tareas from './page/Tareas';
+import Calendario from './page/Calendario';
+import Recordatorio from './page/Recordatorio';
 
 
 function App() {
@@ -14,6 +16,8 @@ function App() {
         <Route path='/' element={<Login />}></Route>
         <Route path='/main' element={<Main />}></Route>
         <Route path='/tareas' element={<Tareas />}></Route>
+        <Route path='/calendario' element={<Calendario></Calendario>}></Route>
+        <Route path='/recordatorio' element={<Recordatorio></Recordatorio>}></Route>
       </Routes>
     </BrowserRouter>
   );
