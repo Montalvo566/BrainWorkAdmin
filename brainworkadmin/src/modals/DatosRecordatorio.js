@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import Card from 'react-bootstrap/Card';
 import '../page/styles.css'
-import { Button, Form} from 'react-bootstrap';
+import {Form} from 'react-bootstrap';
+import '../page/styles.css'
 
 function DatosRecordatorio() {
 
@@ -135,21 +136,23 @@ function DatosRecordatorio() {
   return (
     <>
         {/*Funcion de busqueda */}
-        <div>
-            <Form>
-                <Form.Group controlId="formMateria">
-                    <Form.Control
-                        as="select"
-                        value={materiaSeleccionada}
-                        onChange={handleMateriaChange}
-                    >
-                        <option value="">Todos</option>
-                        <option value="pendiente">Pendiente</option>
-                        <option value="en-proceso">En Proceso</option>
-                        <option value="completo">Terminado</option>
-                    </Form.Control>
-                </Form.Group>
-            </Form>
+        <div className="text-center boral_space">
+            <div className="text-center boral23">
+                <Form>
+                    <Form.Group controlId="formMateria">
+                        <Form.Control
+                            as="select"
+                            value={materiaSeleccionada}
+                            onChange={handleMateriaChange}
+                        >
+                            <option value="">Todos</option>
+                            <option value="pendiente">Pendiente</option>
+                            <option value="en-proceso">En Proceso</option>
+                            <option value="completo">Terminado</option>
+                        </Form.Control>
+                    </Form.Group>
+                </Form>
+            </div>
         </div>
 
         {/* Tarjetas con información de recordatorios */}

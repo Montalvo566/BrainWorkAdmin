@@ -25,6 +25,18 @@
   cursor: pointer;
 }
 
+.boral23{
+  height: 95px;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 20px 65px 20px 65px;
+  height: 85px;
+  box-shadow: 0 5px 100px rgba(0, 0, 0, 0.2);
+}
+.boral_space{
+  padding: 20px 0 20px 0;
+  height: 150px;
+}
 
 .boral {
   height: 95px;
