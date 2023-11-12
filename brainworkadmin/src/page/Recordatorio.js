@@ -4,6 +4,7 @@ import { Link} from "react-router-dom";
 import "./styles.css";
 import { IconContext } from "react-icons";
 import Photo from "../img/doom.png";
+import DatosRecordatorio from "../modals/DatosRecordatorio";
 
 
 function Recordatorio() {
@@ -22,7 +23,7 @@ function Recordatorio() {
         </div>
         
         {/*Menu lateral */}
-        <nav className={sidebar ? "nav-menu active" : "nav-menu"}>
+        <nav style={{ zIndex: 1000 }} className={sidebar ? "nav-menu active" : "nav-menu"}>
           <ul className="nav-menu-items" onClick={showSidebar}>
           
           <div className="spaUser">
@@ -59,7 +60,8 @@ function Recordatorio() {
           </ul>
         </nav>
 
-        <h1 className="prop">Recordatorio de actividades</h1>
+        {/*Card con informacion */}
+        <DatosRecordatorio></DatosRecordatorio>
       </IconContext.Provider>
     </>
   );

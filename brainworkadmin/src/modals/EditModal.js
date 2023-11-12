@@ -75,6 +75,21 @@ const EditModales = () => {
               />
             </Form.Group>
 
+            <Form.Group controlId="formSubject">
+              <Form.Label>Estado</Form.Label>
+              <Form.Control
+                as="select"
+                name="estado"
+                value={taskData.estado}
+                onChange={handleChange}
+              >
+                <option value="">Seleccionar...</option>
+                <option value="pendiente">Pendiente</option>
+                <option value="en-proceso">En Proceso</option>
+                <option value="completo">Terminado</option>
+              </Form.Control>
+            </Form.Group>
+
             <Form.Group controlId="formDueDate">
               <Form.Label>Fecha de entrega</Form.Label>
               <Form.Control
@@ -88,7 +103,7 @@ const EditModales = () => {
           </Form>
         </Modal.Body>
         <Modal.Footer>
-        <Button variant="primary" type="submit">
+          <Button variant="primary" type="submit">
               Editar Tarea
             </Button>
           <Button variant="danger" onClick={handleClose}>

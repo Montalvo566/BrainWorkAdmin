@@ -3,7 +3,7 @@ import { Table, Pagination, Button} from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import EditModales from './EditModal';
 
-const DataTable = ({ data }) => {
+const DataTable = ({ data}) => {
 
   //Constantes de la funcion de paginacion y busqueda
   const [currentPage, setCurrentPage] = useState(1);
@@ -29,7 +29,7 @@ const DataTable = ({ data }) => {
     );
 
     setSearchResults(filteredResults);
-    setCurrentPage(1); // Reiniciar a la primera página después de la búsqueda
+    setCurrentPage(1); 
   };
 
   return (
@@ -56,6 +56,7 @@ const DataTable = ({ data }) => {
             <th>Tarea</th>
             <th>Descripción</th>
             <th>Materia</th>
+            <th>Estado</th>
             <th>Fecha de Entrega</th>
             <th>Editar</th>
             <th>Eliminar</th>
@@ -68,6 +69,7 @@ const DataTable = ({ data }) => {
               <td>{item.nombreTareas}</td>
               <td>{item.descripcion}</td>
               <td>{item.materia}</td>
+              <td>{item.estado}</td>
               <td>{item.fechaEntrega}</td>
               <td>
                   <EditModales></EditModales>

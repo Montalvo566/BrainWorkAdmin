@@ -22,6 +22,7 @@ function Tareas() {
       nombreTareas: 'FrontEnd',
       descripcion: 'Crear una aplicación usando ReactJs',
       materia: 'Programación 1',
+      estado: 'Pendiente',
       fechaEntrega: '2023-12-01',
     },
     {
@@ -29,6 +30,7 @@ function Tareas() {
       nombreTareas: 'Base de datos',
       descripcion: 'Se debe crear una base de datos',
       materia: 'Programación 1',
+      estado: 'Pendiente',
       fechaEntrega: '2023-12-01',
     },
     {
@@ -36,6 +38,7 @@ function Tareas() {
       nombreTareas: 'Subir registros',
       descripcion: 'Subir los registros a la base de datos mediante el sistema',
       materia: 'Bases de datos 1',
+      estado: 'Pendiente',
       fechaEntrega: '2023-12-01',
     },
     {
@@ -43,6 +46,7 @@ function Tareas() {
       nombreTareas: 'Conectar API',
       descripcion: 'Realizar la conexion con la API',
       materia: 'Programación 1',
+      estado: 'Pendiente',
       fechaEntrega: '2023-12-01',
     },
     {
@@ -50,6 +54,7 @@ function Tareas() {
       nombreTareas: 'Revisar registros',
       descripcion: 'Verificar que los registros se encuentre de bien redactados',
       materia: 'Bases de datos 1',
+      estado: 'Pendiente',
       fechaEntrega: '2023-12-01',
     },
     {
@@ -57,6 +62,7 @@ function Tareas() {
       nombreTareas: 'Crear tablas',
       descripcion: 'Crear las tablas necesarias para el sistema',
       materia: 'Bases de datos 1',
+      estado: 'Pendiente',
       fechaEntrega: '2023-12-01',
     },
     {
@@ -64,6 +70,7 @@ function Tareas() {
       nombreTareas: 'Modulo Usuarios',
       descripcion: 'Crear el modulo de usuarios',
       materia: 'Programación 1',
+      estado: 'Pendiente',
       fechaEntrega: '2023-12-01',
     },
     {
@@ -71,6 +78,7 @@ function Tareas() {
       nombreTareas: 'Resumen',
       descripcion: 'Realizar un resumen de 2 cuartillas sobre JavaScript',
       materia: 'Programación 1',
+      estado: 'Pendiente',
       fechaEntrega: '2023-12-01',
     },
     {
@@ -78,6 +86,7 @@ function Tareas() {
       nombreTareas: 'Reporte',
       descripcion: 'Realizar un reporte sobre las bases de datos nos relacionales',
       materia: 'Bases de datos 1',
+      estado: 'Pendiente',
       fechaEntrega: '2023-12-01',
     },
     {
@@ -85,6 +94,7 @@ function Tareas() {
       nombreTareas: 'Investigacion',
       descripcion: 'Realizar una investigacion sobre React Native',
       materia: 'Programación 1',
+      estado: 'Pendiente',
       fechaEntrega: '2023-12-01',
     },
     {
@@ -92,6 +102,7 @@ function Tareas() {
       nombreTareas: 'Investigacion',
       descripcion: 'Realizar una investigacion sobre React JS',
       materia: 'Programación 1',
+      estado: 'Pendiente',
       fechaEntrega: '2023-12-01',
     },
     

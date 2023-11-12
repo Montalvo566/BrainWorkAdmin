@@ -2,6 +2,30 @@
     width: 30%;
 }
 
+.tarjetas-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 10px 50px 0px 50px;
+}
+
+.mi-tarjeta {
+  width: calc(33.33% - 20px);
+  margin-bottom: 20px;
+  box-shadow: 0 4px 800px rgba(0, 0, 0, 0.1);
+  width: 27rem;
+  background-color: blue;
+  color: #fff;
+  font-size: 20px;
+}
+.mi-tarjeta:hover{
+  background-color: #ffffff;
+  color: blue;
+  cursor: pointer;
+}
+
+
 .boral {
   height: 95px;
   display: flex;
