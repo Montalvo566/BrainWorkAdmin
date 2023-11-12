@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Button, Modal, Form } from 'react-bootstrap';
+import '../page/styles.css'
 
 const Modales = () => {
   const [show, setShow] = useState(false);
@@ -23,14 +24,13 @@ const Modales = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Aquí puedes realizar acciones con los datos del formulario
     console.log('Datos del formulario:', taskData);
     handleClose();
   };
 
   return (
     <div>
-      <Button variant="primary" onClick={handleShow}>
+      <Button className='boton' variant="primary" onClick={handleShow}>
         Agregar Tarea
       </Button>
 

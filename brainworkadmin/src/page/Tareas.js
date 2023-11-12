@@ -7,7 +7,7 @@ import Photo from "../img/doom.png";
 import Modales from "../modals/Modal";
 import { Container, Row, Col } from 'react-bootstrap';
 import DataTable from "../modals/Tabla";
-import EditModales from "../modals/EditModal";
+import './styles.css'
 
 
 function Tareas() {
@@ -148,9 +148,15 @@ function Tareas() {
         </nav>
 
         {/*Modal para agregar tareas*/}
-        <Modales></Modales>
+        <div className="text-center space">
+          <div className="text-center boral">
+          <Modales></Modales>
+          </div>
+          
+        </div>
 
         {/*Tabla de tareas asignadas*/}
+        <div className="bordeo">
         <Container>
           <Row>
             <Col>
@@ -159,6 +165,7 @@ function Tareas() {
             </Col>
           </Row>
         </Container>
+        </div>
 
       </IconContext.Provider>
     </>

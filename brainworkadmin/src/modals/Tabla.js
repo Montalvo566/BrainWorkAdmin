@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import { Table, Pagination} from 'react-bootstrap';
+import { Table, Pagination, Button} from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import EditModales from './EditModal';
 
@@ -57,7 +57,8 @@ const DataTable = ({ data }) => {
             <th>Descripción</th>
             <th>Materia</th>
             <th>Fecha de Entrega</th>
-            <th>Acciones</th>
+            <th>Editar</th>
+            <th>Eliminar</th>
           </tr>
         </thead>
         <tbody>
@@ -70,6 +71,9 @@ const DataTable = ({ data }) => {
               <td>{item.fechaEntrega}</td>
               <td>
                   <EditModales></EditModales>
+              </td>
+              <td>
+                  <Button className='btn btn-danger'>Eliminar</Button>
               </td>
             </tr>
           ))}

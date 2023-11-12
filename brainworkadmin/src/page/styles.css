@@ -2,6 +2,27 @@
     width: 30%;
 }
 
+.boral {
+  height: 95px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 20px 60px 20px 5px;
+  height: 85px;
+  box-shadow: 0 5px 100px rgba(0, 0, 0, 0.2);
+}
+.space{
+  padding: 20px 0 20px 0;
+  height: 150px;
+}
+.boton{
+  padding: 15px 15px 15px 15px;
+}
+.bordeo{
+  box-shadow: 0 0 100px rgba(0, 0, 0, 0.2);
+  padding: 50px 0px 0px 0px;
+}
+
 img{
   height: 230px;
   border-radius: 200px;
