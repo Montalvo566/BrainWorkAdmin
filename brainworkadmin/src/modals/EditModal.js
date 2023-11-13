@@ -103,7 +103,7 @@ const EditModales = () => {
           </Form>
         </Modal.Body>
         <Modal.Footer>
-          <Button variant="primary" type="submit">
+          <Button variant="primary" type="submit" onClick={handleClose}>
               Editar Tarea
             </Button>
           <Button variant="danger" onClick={handleClose}>

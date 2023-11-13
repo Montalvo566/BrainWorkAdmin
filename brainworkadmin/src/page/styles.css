@@ -115,7 +115,7 @@ img{
   height: 75px;
 }
 .coll:hover{
-  color: blue;
+  color: #0000ff;
   background-color: #ffffff;
 }
 
@@ -180,6 +180,7 @@ img{
   left: -100%;
   transition: 850ms;
   box-shadow: 0 5px 125px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
 }
 
 .nav-menu.active {

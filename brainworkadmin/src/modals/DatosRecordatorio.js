@@ -136,7 +136,7 @@ function DatosRecordatorio() {
   return (
     <>
         {/*Funcion de busqueda */}
-        <div className="text-center boral_space">
+        <div className="text-center">
             <div className="text-center boral23">
                 <Form>
                     <Form.Group controlId="formMateria">

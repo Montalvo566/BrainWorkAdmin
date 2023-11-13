@@ -1,37 +1,76 @@
-import React from 'react';
+import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './styles.css'
-import { Link } from 'react-router-dom';
+import 'sweetalert2/dist/sweetalert2.css';
+import './styles.css';
+import { Link, useNavigate } from 'react-router-dom';
+import Swal from 'sweetalert2';
 
-function Login () {
-    
-    return(
-        <div className='login template d-flex justify-content-center align-items-center vh-100 bg-primary'>
-            <div className='form_container p-5 rounded bg-white'>
-                <form>
-                    <h3 className='text-center'>Inicio de Sesión</h3>
-                    <div className='mb-2'>
-                        <label>Correo electronico:</label>
-                        <input type='email' placeholder='Colocar correo' className='form-control'></input>
-                    </div>
+function Login() {
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const navigate = useNavigate();
 
-                    <div className='mb-2'>
-                        <label>Contraseña:</label>
-                        <input type='password' placeholder='Colocar contraseña' className='form-control'></input>
-                    </div>
+  const handleEmailChange = (e) => {
+    setEmail(e.target.value);
+  };
 
-                    <div className='mb-2'>
-                        <input type='checkbox' className='custom-control custom-checkbox' id='check'></input>
-                        <label htmlFor='check' className='custom-input-label ms-2'>Recordar contraseña</label>
-                    </div>
+  const handlePasswordChange = (e) => {
+    setPassword(e.target.value);
+  };
 
-                    <div className='d-grid'>
-                        <Link to="/main" className='d-grid'><button className='btn btn-primary'>Iniciar Sesión</button></Link>
-                    </div>
-                </form>
-            </div>
-        </div>
-    )
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    if (email === 'Angel@gmail.com' && password === '12345') {
+      navigate('/main');
+    } else {
+      Swal.fire({
+        icon: 'info',
+        title: 'Inicio de Sesión Invalido',
+        text: 'El correo o la contraseña es incorrecto',
+      });
+    }
+  };
+
+  return (
+    <div className='login template d-flex justify-content-center align-items-center vh-100 bg-primary'>
+      <div className='form_container p-5 rounded bg-white'>
+        <form onSubmit={handleSubmit}>
+          <h3 className='text-center'>Inicio de Sesión</h3>
+          <br></br>
+          <div className='mb-2'>
+            <label>Correo electrónico:</label>
+            <input
+              type='email'
+              placeholder='Colocar correo'
+              className='form-control'
+              value={email}
+              onChange={handleEmailChange}
+            ></input>
+          </div>
+          <br></br>
+
+          <div className='mb-2'>
+            <label>Contraseña:</label>
+            <input
+              type='password'
+              placeholder='Colocar contraseña'
+              className='form-control'
+              value={password}
+              onChange={handlePasswordChange}
+            ></input>
+          </div>
+          <br></br>
+
+          <div className='d-grid'>
+            <button type='submit' className='btn btn-primary'>
+              Iniciar Sesión
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  );
 }
 
 export default Login;
