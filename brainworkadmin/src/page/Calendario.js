@@ -5,6 +5,7 @@ import "./styles.css";
 import { IconContext } from "react-icons";
 import Photo from "../img/doom.png"
 import Swal from "sweetalert2";
+import ModeloCalendario from "../modals/ModeloCalendario";
 
 
 function Calendario() {
@@ -82,7 +83,8 @@ function Calendario() {
           </ul>
         </nav>
 
-        <h1 className="prop">Calendario de actividades</h1>
+        {/*Calendario de actividades*/}
+        <ModeloCalendario></ModeloCalendario>
       </IconContext.Provider>
     </>
   );
