@@ -2,6 +2,11 @@
     width: 30%;
 }
 
+.calendario{
+  color: #0000ff;
+  box-shadow: 0 4px 800px rgba(0, 0, 0, 0.1);
+}
+
 .tarjetas-container {
   display: flex;
   flex-wrap: wrap;

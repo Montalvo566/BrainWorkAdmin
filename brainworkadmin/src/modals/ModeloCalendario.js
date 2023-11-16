@@ -23,8 +23,8 @@ const events = [
     {
         title : "Reunion",
         allDay : true,
-        start : new Date(2023, 6, 0),
-        end : new Date(2023, 6, 0)
+        start : new Date(2023, 10, 1),
+        end : new Date(2023, 10, 1)
     }
 ]
 
@@ -32,8 +32,8 @@ function ModeloCalendario() {
 
   return (
     <>
-        <div>
-            <Calendar localizer={localizer} events={events} startAccessor="start" endAccessor="end" style={{height:500, margin:"50px"}}></Calendar>
+        <div className="calendario">
+            <Calendar localizer={localizer} events={events} startAccessor="start" endAccessor="end" style={{height:600, margin:"50px"}}></Calendar>
         </div>
     </>
   );
