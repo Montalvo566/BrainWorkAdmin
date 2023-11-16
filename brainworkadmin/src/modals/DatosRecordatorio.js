@@ -13,7 +13,7 @@ function DatosRecordatorio() {
       descripcion: 'Crear una aplicación usando ReactJs',
       materia: 'Programación 1',
       estado: 'Pendiente',
-      fechaEntrega: '2023-12-01',
+      fechaEntrega: '2023-10-02',
     },
     {
       id: 2,
@@ -21,7 +21,7 @@ function DatosRecordatorio() {
       descripcion: 'Se debe crear una base de datos',
       materia: 'Programación 1',
       estado: 'Pendiente',
-      fechaEntrega: '2023-12-01',
+      fechaEntrega: '2023-10-05',
     },
     {
       id: 3,
@@ -29,7 +29,7 @@ function DatosRecordatorio() {
       descripcion: 'Subir los registros a la base de datos mediante el sistema',
       materia: 'Bases de datos 1',
       estado: 'Pendiente',
-      fechaEntrega: '2023-12-01',
+      fechaEntrega: '2023-10-10',
     },
     {
       id: 4,
@@ -37,7 +37,7 @@ function DatosRecordatorio() {
       descripcion: 'Realizar la conexion con la API',
       materia: 'Programación 1',
       estado: 'Pendiente',
-      fechaEntrega: '2023-12-01',
+      fechaEntrega: '2023-10-15',
     },
     {
       id: 5,
@@ -45,7 +45,7 @@ function DatosRecordatorio() {
       descripcion: 'Verificar que los registros se encuentre de bien redactados',
       materia: 'Bases de datos 1',
       estado: 'Pendiente',
-      fechaEntrega: '2023-12-01',
+      fechaEntrega: '2023-10-20',
     },
     {
       id: 6,
@@ -53,7 +53,7 @@ function DatosRecordatorio() {
       descripcion: 'Crear las tablas necesarias para el sistema',
       materia: 'Bases de datos 1',
       estado: 'Pendiente',
-      fechaEntrega: '2023-12-01',
+      fechaEntrega: '2023-10-28',
     },
     {
       id: 7,
@@ -61,7 +61,7 @@ function DatosRecordatorio() {
       descripcion: 'Crear el modulo de usuarios',
       materia: 'Programación 1',
       estado: 'Pendiente',
-      fechaEntrega: '2023-12-01',
+      fechaEntrega: '2023-11-05',
     },
     {
       id: 8,
@@ -69,7 +69,7 @@ function DatosRecordatorio() {
       descripcion: 'Realizar un resumen de 2 cuartillas sobre JavaScript',
       materia: 'Programación 1',
       estado: 'Pendiente',
-      fechaEntrega: '2023-12-01',
+      fechaEntrega: '2023-11-05',
     },
     {
       id: 9,
@@ -77,7 +77,7 @@ function DatosRecordatorio() {
       descripcion: 'Realizar un reporte sobre las bases de datos nos relacionales',
       materia: 'Bases de datos 1',
       estado: 'Pendiente',
-      fechaEntrega: '2023-12-01',
+      fechaEntrega: '2023-11-10',
     },
     {
       id: 10,
@@ -85,7 +85,7 @@ function DatosRecordatorio() {
       descripcion: 'Realizar una investigacion sobre React Native',
       materia: 'Programación 1',
       estado: 'Pendiente',
-      fechaEntrega: '2023-12-01',
+      fechaEntrega: '2023-11-12',
     },
     {
       id: 11,
@@ -93,16 +93,16 @@ function DatosRecordatorio() {
       descripcion: 'Realizar una investigacion sobre React JS',
       materia: 'Programación 1',
       estado: 'Pendiente',
-      fechaEntrega: '2023-12-01',
+      fechaEntrega: '2023-11-22',
     },
     {
-        id: 12,
-        nombreTareas: 'Investigacion',
-        descripcion: 'Realizar una investigacion sobre React JS',
-        materia: 'Programación 1',
-        estado: 'Pendiente',
-        fechaEntrega: '2023-12-01',
-      },
+      id: 12,
+      nombreTareas: 'Reporte',
+      descripcion: 'Realizar un reporte sobre las bases de datos no relacionales',
+      materia: 'Programación 1',
+      estado: 'Pendiente',
+      fechaEntrega: '2023-11-22',
+    },
     
   ]);
 

@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import { Table, Pagination, Button} from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import EditModales from './EditModal';
+import Swal from "sweetalert2";
 
 const DataTable = ({ data}) => {
 
@@ -30,6 +31,24 @@ const DataTable = ({ data}) => {
 
     setSearchResults(filteredResults);
     setCurrentPage(1); 
+  };
+
+  //Alerta del boton eliminar
+  const handleLogout = () => {
+    Swal.fire({
+      title: "¿Quieres eliminar el registro?",
+      icon: "warning",
+      showCancelButton: true,
+      confirmButtonColor: "#3085d6",
+      cancelButtonColor: "#d33",
+      confirmButtonText: "Sí",
+      cancelButtonText: "Cancelar",
+    }).then((result) => {
+      if (result.isConfirmed) {
+        // Realiza la lógica de cierre de sesión necesaria
+        Swal.fire("¡Registro eliminado!", "", "success");
+      }
+    });
   };
 
   return (
@@ -75,7 +94,7 @@ const DataTable = ({ data}) => {
                   <EditModales></EditModales>
               </td>
               <td>
-                  <Button className='btn btn-danger'>Eliminar</Button>
+                  <Button className='btn btn-danger' onClick={handleLogout}>Eliminar</Button>
               </td>
             </tr>
           ))}

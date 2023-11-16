@@ -33,7 +33,7 @@ function Login() {
   };
 
   return (
-    <div className='login template d-flex justify-content-center align-items-center vh-100 bg-primary'>
+    <div className='login template d-flex justify-content-center align-items-center vh-100'>
       <div className='form_container p-5 rounded bg-white'>
         <form onSubmit={handleSubmit}>
           <h3 className='text-center'>Inicio de Sesión</h3>
@@ -43,7 +43,7 @@ function Login() {
             <input
               type='email'
               placeholder='Colocar correo'
-              className='form-control'
+              className='form-control cla'
               value={email}
               onChange={handleEmailChange}
             ></input>
@@ -55,7 +55,7 @@ function Login() {
             <input
               type='password'
               placeholder='Colocar contraseña'
-              className='form-control'
+              className='form-control cla'
               value={password}
               onChange={handlePasswordChange}
             ></input>
@@ -63,7 +63,7 @@ function Login() {
           <br></br>
 
           <div className='d-grid'>
-            <button type='submit' className='btn btn-primary'>
+            <button type='submit' className='btn btn-primary cla'>
               Iniciar Sesión
             </button>
           </div>

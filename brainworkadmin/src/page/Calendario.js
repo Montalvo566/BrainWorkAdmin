@@ -8,6 +8,7 @@ import Swal from "sweetalert2";
 import ModeloCalendario from "../modals/ModeloCalendario";
 
 
+
 function Calendario() {
   const [sidebar, setSidebar] = useState(false);
 
@@ -17,7 +18,7 @@ function Calendario() {
   const navigate = useNavigate();
   const handleLogout = () => {
     Swal.fire({
-      title: "¿Quieres Serrar Sesión?",
+      title: "¿Quieres Cerrar Sesión?",
       icon: "warning",
       showCancelButton: true,
       confirmButtonColor: "#3085d6",

@@ -15,7 +15,7 @@ function Main() {
   const navigate = useNavigate();
   const handleLogout = () => {
     Swal.fire({
-      title: "¿Quieres Serrar Sesión?",
+      title: "¿Quieres Cerrar Sesión?",
       icon: "warning",
       showCancelButton: true,
       confirmButtonColor: "#3085d6",

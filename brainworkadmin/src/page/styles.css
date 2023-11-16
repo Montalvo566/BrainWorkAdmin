@@ -5,7 +5,9 @@
 .calendario{
   color: #0000ff;
   box-shadow: 0 4px 800px rgba(0, 0, 0, 0.1);
+  padding: 2px 15px 2px 15px;
 }
+
 
 .tarjetas-container {
   display: flex;

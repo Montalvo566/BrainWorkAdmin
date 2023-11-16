@@ -124,3 +124,10 @@ h2{
   display: flex;
   
 }
+.login{
+  background-color: blue;
+  font-size: 20px;
+}
+.cla{
+  font-size: 20px;
+}

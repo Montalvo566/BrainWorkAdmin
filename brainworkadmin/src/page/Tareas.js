@@ -24,7 +24,7 @@ function Tareas() {
       descripcion: 'Crear una aplicación usando ReactJs',
       materia: 'Programación 1',
       estado: 'Pendiente',
-      fechaEntrega: '2023-12-01',
+      fechaEntrega: '2023-10-02',
     },
     {
       id: 2,
@@ -32,7 +32,7 @@ function Tareas() {
       descripcion: 'Se debe crear una base de datos',
       materia: 'Programación 1',
       estado: 'Pendiente',
-      fechaEntrega: '2023-12-01',
+      fechaEntrega: '2023-10-05',
     },
     {
       id: 3,
@@ -40,7 +40,7 @@ function Tareas() {
       descripcion: 'Subir los registros a la base de datos mediante el sistema',
       materia: 'Bases de datos 1',
       estado: 'Pendiente',
-      fechaEntrega: '2023-12-01',
+      fechaEntrega: '2023-10-10',
     },
     {
       id: 4,
@@ -48,7 +48,7 @@ function Tareas() {
       descripcion: 'Realizar la conexion con la API',
       materia: 'Programación 1',
       estado: 'Pendiente',
-      fechaEntrega: '2023-12-01',
+      fechaEntrega: '2023-10-15',
     },
     {
       id: 5,
@@ -56,7 +56,7 @@ function Tareas() {
       descripcion: 'Verificar que los registros se encuentre de bien redactados',
       materia: 'Bases de datos 1',
       estado: 'Pendiente',
-      fechaEntrega: '2023-12-01',
+      fechaEntrega: '2023-10-20',
     },
     {
       id: 6,
@@ -64,7 +64,7 @@ function Tareas() {
       descripcion: 'Crear las tablas necesarias para el sistema',
       materia: 'Bases de datos 1',
       estado: 'Pendiente',
-      fechaEntrega: '2023-12-01',
+      fechaEntrega: '2023-10-28',
     },
     {
       id: 7,
@@ -72,7 +72,7 @@ function Tareas() {
       descripcion: 'Crear el modulo de usuarios',
       materia: 'Programación 1',
       estado: 'Pendiente',
-      fechaEntrega: '2023-12-01',
+      fechaEntrega: '2023-11-05',
     },
     {
       id: 8,
@@ -80,7 +80,7 @@ function Tareas() {
       descripcion: 'Realizar un resumen de 2 cuartillas sobre JavaScript',
       materia: 'Programación 1',
       estado: 'Pendiente',
-      fechaEntrega: '2023-12-01',
+      fechaEntrega: '2023-11-05',
     },
     {
       id: 9,
@@ -88,7 +88,7 @@ function Tareas() {
       descripcion: 'Realizar un reporte sobre las bases de datos nos relacionales',
       materia: 'Bases de datos 1',
       estado: 'Pendiente',
-      fechaEntrega: '2023-12-01',
+      fechaEntrega: '2023-11-10',
     },
     {
       id: 10,
@@ -96,7 +96,7 @@ function Tareas() {
       descripcion: 'Realizar una investigacion sobre React Native',
       materia: 'Programación 1',
       estado: 'Pendiente',
-      fechaEntrega: '2023-12-01',
+      fechaEntrega: '2023-11-12',
     },
     {
       id: 11,
@@ -104,7 +104,15 @@ function Tareas() {
       descripcion: 'Realizar una investigacion sobre React JS',
       materia: 'Programación 1',
       estado: 'Pendiente',
-      fechaEntrega: '2023-12-01',
+      fechaEntrega: '2023-11-22',
+    },
+    {
+      id: 12,
+      nombreTareas: 'Reporte',
+      descripcion: 'Realizar un reporte sobre las bases de datos no relacionales',
+      materia: 'Programación 1',
+      estado: 'Pendiente',
+      fechaEntrega: '2023-11-22',
     },
     
   ]);
@@ -113,7 +121,7 @@ function Tareas() {
   const navigate = useNavigate();
   const handleLogout = () => {
     Swal.fire({
-      title: "¿Quieres Serrar Sesión?",
+      title: "¿Quieres Cerrar Sesión?",
       icon: "warning",
       showCancelButton: true,
       confirmButtonColor: "#3085d6",
