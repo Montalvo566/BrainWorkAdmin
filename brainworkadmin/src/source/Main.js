@@ -5,6 +5,7 @@ import "./styles.css";
 import { IconContext } from "react-icons";
 import Swal from "sweetalert2";
 import Photo from "../img/doom.png";
+import DisenoMenu from "../modals/DisenoMenu";
 
 function Main() {
   const [sidebar, setSidebar] = useState(false);
@@ -80,7 +81,9 @@ function Main() {
           </ul>
         </nav>
 
-        <h1 className="prop">Menu</h1>
+        {/*Diseño del menu*/}
+        <DisenoMenu></DisenoMenu>
+        
       </IconContext.Provider>
     </>
   );
