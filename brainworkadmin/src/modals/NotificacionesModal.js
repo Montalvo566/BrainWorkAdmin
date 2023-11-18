@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Button, Modal, Form } from 'react-bootstrap';
+import {Modal} from 'react-bootstrap';
 import Stack from 'react-bootstrap/Stack';
 import '../page/styles.css'
 import { FaBell} from 'react-icons/fa';

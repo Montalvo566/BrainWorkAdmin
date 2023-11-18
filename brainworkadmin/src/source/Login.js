@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'sweetalert2/dist/sweetalert2.css';
 import './styles.css';
-import { Link, useNavigate } from 'react-router-dom';
+import {useNavigate } from 'react-router-dom';
 import Swal from 'sweetalert2';
 
 function Login() {
