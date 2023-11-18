@@ -1,7 +1,7 @@
 .menu-section {
     margin-bottom: 35px;
     padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.1);
     position: relative;
 }
   
@@ -21,7 +21,6 @@
     flex-direction: column;
     width: 80%; 
 }
-  
 
 .react-calendar {
     width: 100%; 
@@ -43,15 +42,41 @@
     border-radius: 5px;
 }
 
-  .menu-button {
+.task-section:hover{
+    cursor: pointer;
+}
+
+.menu-button {
     text-align: center;
     padding-bottom: 20px;
 }
 .color{
     color: blue;
 }
+.enlaces{
+    text-decoration: none;
+    color: black;
+}
 
 .notificaciones{
     color: blue;
-    text-align: end;
+    text-align: end; 
+    padding: 25px;
+    font-size: 40px;
+}
+.noti:hover{
+    cursor: pointer;
+}
+
+.pendiente{
+    border: 2px solid rgb(255, 61, 61);
+    color: rgb(255, 61, 61);
+}
+.proceso{
+    border: 2px solid rgb(246, 255, 0);
+    color: rgb(246, 255, 0);
+}
+.terminado{
+    border: 2px solid rgb(30, 255, 0);
+    color: rgb(30, 255, 0);
 }

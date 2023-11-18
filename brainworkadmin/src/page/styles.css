@@ -8,6 +8,13 @@
   padding: 2px 15px 2px 15px;
 }
 
+.opcion{
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  color: black;
+}
+.tar{
+  text-align: center;
+}
 
 .tarjetas-container {
   display: flex;
